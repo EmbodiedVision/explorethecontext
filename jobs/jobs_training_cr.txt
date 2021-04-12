@@ -1,0 +1,24 @@
+python -m context_exploration.train_model --comment=cr_s1_asq1_posweights_relu_npklw5 with action_squash_cfg env_name=action_squash_1  kl_np_weight=5 seed=1
+python -m context_exploration.train_model --comment=cr_s2_asq1_posweights_relu_npklw5 with action_squash_cfg env_name=action_squash_1  kl_np_weight=5 seed=2
+python -m context_exploration.train_model --comment=cr_s3_asq1_posweights_relu_npklw5 with action_squash_cfg env_name=action_squash_1  kl_np_weight=5 seed=3
+python -m context_exploration.train_model --comment=cr_s1_asq1_noisefree_posweights_relu_npklw5 with action_squash_cfg env_name=action_squash_1_noisefree  kl_np_weight=5 seed=1
+python -m context_exploration.train_model --comment=cr_s2_asq1_noisefree_posweights_relu_npklw5 with action_squash_cfg env_name=action_squash_1_noisefree  kl_np_weight=5 seed=2
+python -m context_exploration.train_model --comment=cr_s3_asq1_noisefree_posweights_relu_npklw5 with action_squash_cfg env_name=action_squash_1_noisefree  kl_np_weight=5 seed=3
+python -m context_exploration.train_model --comment=cr_s1_asq2_posweights_relu_npklw5 with action_squash_cfg env_name=action_squash_2  kl_np_weight=5 seed=1
+python -m context_exploration.train_model --comment=cr_s2_asq2_posweights_relu_npklw5 with action_squash_cfg env_name=action_squash_2  kl_np_weight=5 seed=2
+python -m context_exploration.train_model --comment=cr_s3_asq2_posweights_relu_npklw5 with action_squash_cfg env_name=action_squash_2  kl_np_weight=5 seed=3
+python -m context_exploration.train_model --comment=cr_s1_asq2_noisefree_posweights_relu_npklw5 with action_squash_cfg env_name=action_squash_2_noisefree  kl_np_weight=5 seed=1
+python -m context_exploration.train_model --comment=cr_s2_asq2_noisefree_posweights_relu_npklw5 with action_squash_cfg env_name=action_squash_2_noisefree  kl_np_weight=5 seed=2
+python -m context_exploration.train_model --comment=cr_s3_asq2_noisefree_posweights_relu_npklw5 with action_squash_cfg env_name=action_squash_2_noisefree  kl_np_weight=5 seed=3
+python -m context_exploration.train_model --comment=cr_s1_mountaincar_posweights_False_npklw5 with mountaincar_cfg env_name=mountaincar no_positive_weights kl_np_weight=5 seed=1
+python -m context_exploration.train_model --comment=cr_s2_mountaincar_posweights_False_npklw5 with mountaincar_cfg env_name=mountaincar no_positive_weights kl_np_weight=5 seed=2
+python -m context_exploration.train_model --comment=cr_s3_mountaincar_posweights_False_npklw5 with mountaincar_cfg env_name=mountaincar no_positive_weights kl_np_weight=5 seed=3
+python -m context_exploration.train_model --comment=cr_s1_mountaincar_posweights_relu_npklw5 with mountaincar_cfg env_name=mountaincar  kl_np_weight=5 seed=1
+python -m context_exploration.train_model --comment=cr_s2_mountaincar_posweights_relu_npklw5 with mountaincar_cfg env_name=mountaincar  kl_np_weight=5 seed=2
+python -m context_exploration.train_model --comment=cr_s3_mountaincar_posweights_relu_npklw5 with mountaincar_cfg env_name=mountaincar  kl_np_weight=5 seed=3
+python -m context_exploration.train_model --comment=cr_s1_pendulum_bd_posweights_False_npklw5 with pendulum_bd_cfg env_name=pendulum_quadrantactionfactorar2bd no_positive_weights kl_np_weight=5 seed=1
+python -m context_exploration.train_model --comment=cr_s2_pendulum_bd_posweights_False_npklw5 with pendulum_bd_cfg env_name=pendulum_quadrantactionfactorar2bd no_positive_weights kl_np_weight=5 seed=2
+python -m context_exploration.train_model --comment=cr_s3_pendulum_bd_posweights_False_npklw5 with pendulum_bd_cfg env_name=pendulum_quadrantactionfactorar2bd no_positive_weights kl_np_weight=5 seed=3
+python -m context_exploration.train_model --comment=cr_s1_pendulum_bd_posweights_relu_npklw5 with pendulum_bd_cfg env_name=pendulum_quadrantactionfactorar2bd  kl_np_weight=5 seed=1
+python -m context_exploration.train_model --comment=cr_s2_pendulum_bd_posweights_relu_npklw5 with pendulum_bd_cfg env_name=pendulum_quadrantactionfactorar2bd  kl_np_weight=5 seed=2
+python -m context_exploration.train_model --comment=cr_s3_pendulum_bd_posweights_relu_npklw5 with pendulum_bd_cfg env_name=pendulum_quadrantactionfactorar2bd  kl_np_weight=5 seed=3
