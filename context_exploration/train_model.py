@@ -7,6 +7,7 @@ This source code is licensed under the MIT license found in the
 LICENSE.md file in the root directory of this source tree or at
 https://opensource.org/licenses/MIT.
 """
+from copy import deepcopy
 import os
 import warnings
 from collections import defaultdict
@@ -286,8 +287,8 @@ def get_checkpoint_data(
     context_encoder, transition_model, validation_loss, step, is_best
 ):
     return {
-        "transition_model": transition_model.state_dict(),
-        "context_encoder": context_encoder.state_dict(),
+        "transition_model": deepcopy(transition_model.state_dict()),
+        "context_encoder": deepcopy(context_encoder.state_dict()),
         "validation_loss": validation_loss,
         "step": step,
         "is_best": is_best,
