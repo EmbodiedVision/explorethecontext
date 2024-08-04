@@ -114,7 +114,7 @@ class ProfileMountainCarEnv(gym.Env):
 class MountainCarProfileContextSpace(gym.Space):
     def __init__(self):
         super(MountainCarProfileContextSpace, self).__init__(
-            shape=(0,), dtype=np.object
+            shape=(0,), dtype=object
         )
 
     def sample(self):
