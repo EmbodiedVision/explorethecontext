@@ -85,6 +85,12 @@ cd context_exploration/evaluation/notebooks; jupyter notebook
 To generate the ablation plots, generate calibration jobs with
 ` WITH_ABLATIONS = True ` in `jobs/generate_jobs_calibration.py`.
 
+
+## Errata
+May 2024: We have discovered an error in the implementation, such that, in contrast to what is reported in (Achterhold & Stueckler, 2021), not the models with the minimal validation loss are used for the final evaluation, but those after training has finished (after a fixed number of steps). We have fixed the error in the [bugfix_modelselection](https://github.com/EmbodiedVision/explorethecontext/tree/bugfix_modelselection) branch, including notebooks with updated results. Qualitatively, we observe that the two variants yield similar results.
+
+
+
 ## License
 
 See [LICENSE.md](LICENSE.md).
