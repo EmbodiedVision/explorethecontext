@@ -49,10 +49,13 @@ python -m context_exploration.data.data_generation
 
 
 ### 3. Train models
-You can either train the models yourself or download pre-trained (and calibrated) models from \
-https://keeper.mpdl.mpg.de/f/e0463fd6b68c45cbaf0b/?dl=1 (you can verify the checksum in `sha1sums`). \
+You can either train the models yourself or download pre-trained (and calibrated) models from 
+* https://keeper.mpdl.mpg.de/f/e0463fd6b68c45cbaf0b/?dl=1 (for the results reported in the paper)
+* https://keeper.mpdl.mpg.de/f/988ed8adf071486c80dc/?dl=1 (for the updated models with fixed model selection bug, see `Errata`)
+
+You can verify the checksum in `sha1sums`). \
 Extract the downloaded tar archive into the `./experiments/` directory of this repository (you may have to create this first). \
-To generate the data yourself, first create the experiments directory 
+To train the models yourself, first create the experiments directory
 ```
 mkdir -p experiments/train_model
 ```
@@ -87,7 +90,7 @@ To generate the ablation plots, generate calibration jobs with
 
 
 ## Errata
-May 2024: We have discovered an error in the implementation, such that, in contrast to what is reported in (Achterhold & Stueckler, 2021), not the models with the minimal validation loss are used for the final evaluation, but those after training has finished (after a fixed number of steps). We have fixed the error in the [bugfix_modelselection](https://github.com/EmbodiedVision/explorethecontext/tree/bugfix_modelselection) branch, including notebooks with updated results. Qualitatively, we observe that the two variants yield similar results.
+May 2024: We have discovered an error in the implementation, such that, in contrast to what is reported in (Achterhold & Stueckler, 2021), not the models with the minimal validation loss are used for the final evaluation, but those after training has finished (after a fixed number of steps). We have fixed the error in the [bugfix_modelselection](https://github.com/EmbodiedVision/explorethecontext/tree/bugfix_modelselection) branch. The notebooks in [context_exploration/evaluation/notebooks](context_exploration/evaluation/notebooks) contain the updated results. Qualitatively, we observe that the two variants yield similar results.
 
 
 ## License
